@@ -1,7 +1,7 @@
 1.What is NPM?<br/>
 ans:
 npm is a package manager for the JavaScript programming language maintained by npm, Inc. npm is the default package manager for the JavaScript runtime environment Node.js. It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry.What is npm and 
-npm is the world's largest Software Registry. The registry contains over 800,000 code packages. Open-source developers use npm to share software. Many organizations also use npm to manage private development.NPM is a package manager for Node. js packages, or modules if you like. www.npmjs.com hosts thousands of free packages to download and use. The NPM program is installed on your computer when you install Node.js. NPM is already ready to run on your computer!
+npm is the world's largest Software Registry. The registry contains over 800,000 code packages. Open-source developers use npm to share software. Many organizations also use npm to manage private development.NPM is a package manager for Node. js packages, or modules if you like. npjs hosts thousands of free packages to download and use. The NPM program is installed on your computer when you install Node.js. NPM is already ready to run on your computer!
 <hr/>
 2.What are the modules in Node.js?<br/>
 ans:
@@ -22,11 +22,27 @@ The export statement is used in Javascript modules to export functions, objects,
 4.Difference between default export and named export<br/>
 ans:
 Exports without a default tag are Named exports. Exports with the default tag are Default exports. Using one over the other can have effects on your code readability, file structure, and component organization. Named and Default exports are not React-centric ideas.
+ES6 provides us to import a module and use it in other files. Strictly speaking in React terms, one can use stateless components in other components by exporting the components from their respective modules and using it in other files.
+
+ES6 provides two ways to export a module from a file: named export and default export.
+Named Export: (export)
+
+With named exports, one can have multiple named exports per file. Then import the specific exports they want surrounded in braces. The name of imported module has to be the same as the name of the exported module.
+Default Export: (export default)
+
+One can have only one default export per file. When we import we have to specify a name and import like:
+import MyDefaultComponent from "./MyDefaultExport";
+// export
+const MyComponent = () => {}
+export default MyComponent;
 <hr/>
 5.How do you import any module in Node.js<br/>
 ans:
 To import our own Node JS module. var arthmetic = require("arthmetic");
 To import existing Node JS Module Import Node JS “express” module; var arthmetic = require("express"); Import Node JS “mongoose” module; var mongoose = require("mongoose");
+If we observe a Node JS Application or Module, it may dependent on other existing Node JS modules or our own Modules. The major advantage of Modularity is reusability. We don’t need to redevelop the same existing functionality. We can import a Module and reuse that module functionality very easily. How to import a Node JS Module: We use same technique to import our modules or existing Node JS Modules. Node JS Platform has provided a function call “require()” to import one module into another. 
+ex:
+var arthmetic = require("arthmetic");
 <hr/>
 
 6.What are the different types of HTTP requests?<br/>
